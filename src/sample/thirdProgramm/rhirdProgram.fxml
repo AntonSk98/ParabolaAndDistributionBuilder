@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1200.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="sample.thirdProgramm.ThirdProgram">
+  <children>
+    <Label layoutX="21.0" layoutY="80.0" text="n:" textFill="#2929e6">
+      <font>
+        <Font size="25.0" fx:id="x1" />
+      </font>
+    </Label>
+    <TextField id="inputExperimentPermament" fx:id="inputN" layoutX="68.0" layoutY="89.0" prefHeight="25.0" prefWidth="62.0" />
+    <Label font="$x1" layoutX="21.0" layoutY="142.0" minWidth="9.000091552734375" prefWidth="20.0" text="A">
+      <textFill>
+        <Color blue="1.000" green="0.161" red="0.161" fx:id="x2" />
+      </textFill>
+    </Label>
+    <TextField id="minX2" fx:id="inputA" layoutX="68.0" layoutY="151.0" prefHeight="25.0" prefWidth="62.0" />
+    <TextField id="maxX2" fx:id="inputB" layoutX="68.0" layoutY="213.0" prefHeight="25.0" prefWidth="62.0" />
+    <Label font="$x1" layoutX="21.0" layoutY="208.0" text="B" textFill="$x2" />
+    <Button fx:id="buttonRun" font="$x1" layoutX="21.0" layoutY="297.0" mnemonicParsing="false" text="Построить НСВ" />
+    <LineChart fx:id="lineChart" createSymbols="false" layoutX="239.0" layoutY="0.0" prefHeight="800.0" prefWidth="961.0">
+      <xAxis>
+        <NumberAxis side="BOTTOM" />
+      </xAxis>
+      <yAxis>
+        <NumberAxis side="LEFT" />
+      </yAxis>
+    </LineChart>
+    <Label layoutX="45.0" layoutY="425.0" text="Anton Skripin" textFill="$x2">
+      <font>
+        <Font name="Yu Gothic UI Semilight" size="20.0" fx:id="x3" />
+      </font>
+    </Label>
+    <Label font="$x3" layoutX="53.0" layoutY="462.0" text="FT-360008" textFill="$x2" />
+  </children>
+</AnchorPane>

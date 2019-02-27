@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1200.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="sample.secondProgram.SecondLaunch">
+  <children>
+    <Label layoutX="123.0" layoutY="27.0" text="A">
+      <font>
+        <Font size="25.0" fx:id="x1" />
+      </font>
+      <textFill>
+        <Color blue="1.000" green="0.161" red="0.161" fx:id="x2" />
+      </textFill>
+    </Label>
+    <Button fx:id="run" font="$x1" layoutX="24.0" layoutY="247.0" mnemonicParsing="false" prefWidth="229.0" text="Построить ДСВ" textFill="$x2" />
+    <TextField fx:id="textA" layoutX="110.0" layoutY="82.0" prefWidth="44.0" />
+    <Label font="$x1" layoutX="201.0" layoutY="27.0" text="B" textFill="$x2" />
+    <Label font="$x1" layoutX="24.0" layoutY="78.0" text="Range" textFill="$x2" />
+    <Label font="$x1" layoutX="24.0" layoutY="128.0" text="Experiments" textFill="$x2" />
+    <TextField fx:id="textB" layoutX="187.0" layoutY="82.0" prefWidth="44.0" />
+    <TextField fx:id="textExp" layoutX="169.0" layoutY="136.0" prefWidth="84.0" />
+    <LineChart fx:id="lineChart" layoutX="231.0" layoutY="0.0" prefHeight="800.0" prefWidth="969.0" snapToPixel="true">
+      <xAxis>
+        <NumberAxis fx:id="x" label="X" side="BOTTOM" />
+      </xAxis>
+      <yAxis>
+        <NumberAxis fx:id="y" label="Y" side="LEFT" />
+      </yAxis>
+      <padding>
+        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+      </padding>
+    </LineChart>
+    <Label font="$x1" layoutX="24.0" layoutY="183.0" text="Amount" textFill="$x2" />
+    <TextField id="textExp" fx:id="amount" layoutX="169.0" layoutY="187.0" prefWidth="62.0" />
+    <Label layoutX="56.0" layoutY="312.0" text="Anton Skripin" textFill="$x2">
+      <font>
+        <Font name="Yu Gothic UI Semilight" size="20.0" fx:id="x4" />
+      </font>
+    </Label>
+    <Label font="$x4" layoutX="64.0" layoutY="349.0" text="FT-360008" textFill="$x2" />
+  </children>
+</AnchorPane>
